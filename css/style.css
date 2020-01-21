@@ -1,0 +1,53 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ruudustik - neli pilti üksteise kõrval. */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Ruudustiku sees olevate piltide vormistamine. */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Kui kursor on pildi peal. */
+.column img:hover {
+    opacity: 1;
+}
+
+/* Saab floatidest lahti peale rida. */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Suurendatud pilt. */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Pildi tekst. */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Sulgemise nupp suurendatud pildi sees. */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}

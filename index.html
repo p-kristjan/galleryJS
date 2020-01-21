@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Neli pildi veergu. -->
+    <div class="row">
+        <div class="column">
+            <img src="img\img_lights.jpg" onclick="images(this);" alt="The northern lights." />
+        </div>
+        <div class="column">
+            <img src="img\img_mountains.jpg" onclick="images(this);" alt="A beautiful mountainscape." />
+        </div>
+        <div class="column">
+            <img src="img\img_nature.jpg" onclick="images(this);" alt="Nature." />
+        </div>
+        <div class="column">
+            <img src="img\img_snow.jpg" onclick="images(this);" alt="Snowy mountains." />
+        </div>
+    </div>
+
+    <!-- Expanding image container. -->
+    <div class="container">
+        <!-- Close button. -->
+        <span class="closeBtn" onclick="this.parentElement.style.display='none'">&times;</span>
+        <!-- Expanded image. -->
+        <img id="expandedImg" style="width:100%"/>
+        <!-- Descriptive text. -->
+        <div id="imgText"></div>
+    </div>
+</body>
+</html>
